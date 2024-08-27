@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100" style="background-image: url('/Mission/assets/bgregis.jpg');">
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="card login">
+                    <div class="card-body">
+                        <div class="header-login text-center">
+                            <img src="/Mission/assets/Logo.png" alt="logo" style="margin-bottom: 37px;">
+                            <h2 style="font-weight: 700;">Daftar</h2>
+                            <p style="margin-bottom: 30px; font-weight: 400;">Selamat datang!</p>
+                        </div>
+                        <div class="form-login">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" 
+                                        placeholder="&emsp;Masukan username"
+                                        style="background-color: #181a1c; border-radius: 24px; width: 449px; height: 47px; color: #C1C2C4; font-weight: 300;">
+                                        
+                                    </div>
+                                <div class="mb-3 ">
+                                    <label for="password" class="form-label">Kata Sandi</label>
+                                    <input type="password" class="form-control input-with-icon" id="password"
+                                        placeholder="&emsp;Masukan kata sandi" 
+                                        style="background-color: #181a1c; border-radius: 24px; width: 449px; height: 47px; color: #C1C2C4; font-weight: 300;">
+                                            
+                                </div>
+                                <div class="mb-3 ">
+                                    <label for="password" class="form-label">Konfirmasi Kata Sandi</label>
+                                    <input type="password" class="form-control input-with-icon" id="password"
+                                        placeholder="&emsp;Masukan kata sandi" 
+                                        style="background-color: #181a1c; border-radius: 24px; width: 449px; height: 47px; color: #C1C2C4; font-weight: 300;">
+                                            
+                                </div>
+                                <div class="footer-login text-center">
+                                    <div class="row">
+                                        <div class="col-md-6 text-start icon-label" style="font-size: 16px; margin-bottom: 25px;">
+                                            <p style="font-weight: 300;">Sudah punya akun? <a href="#" class="daftar-link"
+                                                    style="text-decoration: none; color: #fff; font-weight: 500;">Masuk</a></p>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-light w-100 btn-login" style="margin-bottom: 10px;">Daftar</button>
+                            </form>
+                            <p style="font-weight: 300;">atau</p>
+                            <button type="submit" class="btn btn-light w-100 btn-login-google">
+                                Daftar dengan google
+                               </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<style>
+    .card {
+        width: 529px;
+        height: 750px;
+        border-radius: 10px;
+        background-color: #181a1c;
+        color: #ffffff;
+        opacity: 0.9;
+    }
+    
+    .form-label{
+        color: #ffffff;
+    }
+
+    .login {
+        padding: 20px;
+        max-width: 629px;
+    }
+    
+
+    .btn-login {
+        font-size: 16px;
+        line-height: 22.4px;
+        width: 449px;
+        height: 47px;
+        background-color: #3d4142;
+        color: #ffffff;
+        border-radius: 24px;
+        border-color: #C1C2C4;
+        
+    }
+    
+    .input-with-icon {
+        background-image: url('/Mission/assets/pass.svg'); 
+        background-repeat: no-repeat; 
+        background-position: right 25px center; 
+        background-size: 18px 18px;
+    }
+
+    .btn-login-google {
+        background-image: url('/Mission/assets/google.svg');
+        background-repeat: no-repeat; 
+        background-position: left 120px center; 
+        background-size: 18px 18px;
+        font-size: 16px;
+        line-height: 22.4px;
+        width: 449px;
+        height: 47px;
+        border-radius: 24px;
+        border-color: #C1C2C4;
+        background-color: #181a1c;
+        color: white;
+    }
+
+    body {
+        font-family: Lato, sans-serif;
+        background-color: #f8f9fa;
+        background-position: 50% 50%;
+    }
+
+    #username::placeholder {
+        color: #C1C2C4;
+    }
+
+    #password::placeholder {
+        color: #C1C2C4;
+    }
+
+</style>
+
+</html>
