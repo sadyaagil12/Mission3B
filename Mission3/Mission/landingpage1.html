@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../Mission/assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <title>Carousel Template · Bootstrap v5.3</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="../mission/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="../Mission/assets/css/carousel.css" rel="stylesheet">
+</head>
+
+
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../Mission/assets/Logo.png" style="width: 103.5px; height: 30px;"></a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Film</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#action">Daftar saya</a>
+        </ul>
+        <form class="d-flex">
+          <button class="btn" type="submit"><img src="../Mission/assets/icon.png"
+              style="width: 40px; height: 40px; border-radius: 50%;"></button>
+        </form>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav" style="margin-right: 100px;">
+        <li class="nav-item dropdown">
+          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Akun</a></li>
+            <li><a class="dropdown-item" href="../Mission/index.html">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Mission/assets/duty.png" style=" width:100% ; height: 587px;">
+        <div class="gradient-overlay"></div>
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 style="color: #fff; font-weight: 700;">Duty After School</h1>
+            <p style="color: #fff; font-weight: 400;">Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
+              <br>
+              Departemen pertahanan mulai merekrut banyak tentara, termasuk siswa<br> sekolah menengah. Mereka pun
+              segera menjadi pejuang garis depan dalam perang.
+            </p>
+            <div class="btn-group">
+              <p><a class="btn btn-md btn-primary" href="#">Mulai</a></p>
+              <p><a class="btn btn-md1 btn-secondary" href="#">&emsp;Selengkapnya</a></p>
+              <p><a class="btn btn-md2 btn-secondary" href="#">18+</a></p>
+              <p><a class="btn btn-md3 btn-secondary" id="btn-mute" href="#"><img
+                    src="../Mission/assets/volume-off.png"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container marketing">
+
+    <!-- row1 -->
+    <div class="row position-relative">
+      <h2 style="margin-bottom: 30px;">Melanjutkan Tontonan Film</h2>
+      <div class="col-md-3">
+        <div class="card1" style="min-height: 162px; min-width: 302px; border-radius: 5px; 
+                   background: 
+                   linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+                   url('../Mission/assets/dntup.png');
+                   background-size: cover; background-position: center; position: relative;">
+          <div class="card-title"></div>
+          <div class="card-body"></div>
+          <div class="card-footer" style="position: absolute; bottom: 0; width: 100%; padding: 10px;">
+            <h6 style="color: #ffffff; font-weight: 400;">&emsp;Don't Look Up <img src="../Mission/assets/star.png"
+                style="margin-left: 100px;"> 4.5/5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card1" style="min-height: 162px; min-width: 302px; border-radius: 5px; 
+                   background: 
+                   linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+                   url('../Mission/assets/allofdead.png');
+                   background-size: cover; background-position: center; position: relative;">
+          <div class="card-title"></div>
+          <div class="card-body"></div>
+          <div class="card-footer" style="position: absolute; bottom: 0; width: 100%; padding: 10px;">
+            <h6 style="color: #ffffff; font-weight: 400;">&emsp;All Of Us Dead <img src="../Mission/assets/star.png"
+                style="margin-left: 100px;"> 4.2/5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card1" style="min-height: 162px; min-width: 302px; border-radius: 5px; 
+                   background: 
+                   linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+                   url('../Mission/assets/blu.png');
+                   background-size: cover; background-position: center; position: relative;">
+          <div class="card-title"></div>
+          <div class="card-body"></div>
+          <h6 class="card-title"><span class="badge text-bg-primary" style="margin: 10px;">Episode Baru</span></h6>
+          <div class="card-footer" style="position: absolute; bottom: 0; width: 100%; padding: 10px;">
+            <h6 style="color: #ffffff; font-weight: 400;">&emsp;Blue Lock <img src="../Mission/assets/star.png"
+                style="margin-left: 135px;"> 4.6/5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card1" style="min-height: 162px; min-width: 302px; border-radius: 5px; 
+                   background: 
+                   linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+                   url('../Mission/assets/oto.png');
+                   background-size: cover; background-position: center; position: relative;">
+          <div class="card-title"></div>
+          <div class="card-body"></div>
+          <div class="card-footer" style="position: absolute; bottom: 0; width: 100%; padding: 10px;">
+            <h6 style="color: #ffffff; font-weight: 400;">A Man Called Otto <img src="../Mission/assets/star.png"
+                style="margin-left: 90px;"> 4.4/5</h6>
+          </div>
+        </div>
+      </div>
+      <button class="button-arrow-left position-absolute start-0 top-50 translate-middle-y"
+        style=" height: 44px; width: 44px; background-repeat: no-repeat;">
+      </button>
+      <button class="button-arrow-right position-absolute end-0 top-50 translate-middle-y"
+        style="height: 44px; width: 44px; background-repeat: no-repeat;">
+      </button>
+    </div>
+    <br>
+    <br>
+    <!-- row2 -->
+    <div class="row position-relative">
+      <h2 style="margin-bottom: 20px;">Film Trending</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/suzu.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-primary">Episode Baru</span></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/dino.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/sonic.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/allofdead1.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-primary">Episode Baru</span></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/big6.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button-arrow-left position-absolute start-0 top-50 translate-middle-y"
+        style="margin-left: 30px; height: 44px; width: 44px; background-repeat: no-repeat;">
+      </button>
+      <button class="button-arrow-right position-absolute end-0 top-50 translate-middle-y"
+        style="margin-right: 55px; height: 44px; width: 44px; background-repeat: no-repeat;">
+      </button>
+    </div>
+    <br>
+    <br>
+    <!-- row3 -->
+    <div class="row position-relative">
+      <h2 style="margin-bottom: 20px;">Film Trending</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/war.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-danger" style="margin:-25% 0 0 80%;">Top <br>
+                  10</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/ant.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-danger" style="margin:-25% 0 0 80%;">Top <br>
+                  10</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/gotg.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-danger" style="margin:-25% 0 0 80%;">Top <br>
+                  10</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/oto1.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-danger" style="margin:-25% 0 0 80%;">Top <br>
+                  10</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/duyungitem.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-danger" style="margin:-25% 0 0 80%;">Top <br>
+                  10</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button-arrow-left position-absolute start-0 top-50 translate-middle-y"
+        style="margin-left: 30px; height: 44px; width: 44px; background-repeat: no-repeat;">
+      </button>
+      <button class="button-arrow-right position-absolute end-0 top-50 translate-middle-y"
+        style="margin-right: 55px; height: 44px; width: 44px; background-repeat: no-repeat;">
+      </button>
+    </div>
+    <br>
+    <br>
+    <!-- row4 -->
+    <div class="row position-relative">
+      <h2 style="margin-bottom: 20px;">Rilis Baru</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/duyungitem.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-danger" style="margin:-25% 0 0 80%;">Top <br>
+                  10</span>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/duty1.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-primary">Episode Baru</span></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/big6.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/allofdead1.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+              <h6 class="card-title"><span class="badge text-bg-primary">Episode Baru</span></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" style="margin: 5px; width: 234px;">
+          <div class="card"
+            style="background-image: url('../Mission/assets/missing.png');background-repeat: no-repeat;border-radius: 5px; border: none;">
+            <div class="card-body">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button-arrow-left position-absolute start-0 top-50 translate-middle-y"
+        style="margin-left: 30px; height: 44px; width: 44px; background-repeat: no-repeat;">
+      </button>
+      <button class="button-arrow-right position-absolute end-0 top-50 translate-middle-y"
+        style="margin-right: 55px; height: 44px; width: 44px; background-repeat: no-repeat;">
+      </button>
+    </div>
+
+    <div class="row top-rating">
+
+
+
+    </div>
+
+
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+</main>
+
+
+<!-- FOOTER -->
+<div class="container">
+  <div class="row" style="margin-bottom: 5px;">
+    <div class="col-md-4"></div>
+    <div class="col-md-1">
+      <h4 style="font-weight: 700;">Genre</h4>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-2">
+      <h4 style="font-weight: 700;">Bantuan</h4>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="../Mission/assets/logo.png" alt="" style="width: 163px; height: 44px; margin-bottom: 20px;">
+      <p>&copy; 2023 Chill All Rights Reserved.</p>
+    </div>
+    <div class="col-md-1">
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Aksi</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Anak-anak</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Anime</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Britania</a></p>
+    </div>
+    <div class="col-md-2">
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Drama</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff; ">Fantasi Ilmiah & Fantasi</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Kejahatan</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">KDrana</a></p>
+    </div>
+    <div class="col-md-1">
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Komedi</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Petualangan</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Perang</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Romantis</a></p>
+    </div>
+    <div class="col-md-2">
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Sains & Alam</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Thriller</a></p>
+    </div>
+    <div class="col-md-2">
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">FAQ</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Kontak kami</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Privasi</a></p>
+      <p><a href="#" style="text-decoration: none; color: #ffffff;">Syarat & ketentuan</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="../Mission/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
