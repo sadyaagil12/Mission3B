@@ -50,7 +50,7 @@ body {
 
 
  .button-arrow-left {
-  background-image: url('../Mission/assets/arrow-left.png');
+  background-image: url('../arrow-left.png');
   background-position: center;
   background-color: #22282A;
   margin-top: 30px;
@@ -61,7 +61,7 @@ body {
  }
 
  .button-arrow-right {
-  background-image: url('../Mission/assets/arrow-right.png');
+  background-image: url('../arrow-right.png');
   background-position: center;
   background-color: #22282A;
   margin-top: 30px;
@@ -83,7 +83,7 @@ body {
   border-color: #0F1E93; 
  }
  .btn-md1 {
-  background-image: url('../Mission/assets/Vector.png');
+  background-image: url('../Vector.png');
   background-repeat: no-repeat; 
   background-position: left 20px center; 
   width: 185px;
